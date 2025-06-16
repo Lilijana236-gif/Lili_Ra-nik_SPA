@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS.css">
+  <title>Kontakt</title>
+</head>
+<body>
+  <header>
+    <h1>Kontakt</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Domov</a>
+    <a href="gallery.html">Galerija</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+
+  <main>
+    <div class="contact-section">
+      <p>Email: <a href="mailto:info@igralnekonzole.si">info@igralnekonzole.si</a></p>
+      <p>Telefon: +386 41 123 456</p>
+    </div>
+
+    <section class="feedback-form">
+      <h2>Povratne informacije</h2>
+      <form onsubmit="return preveriObrazec()">
+        <label for="name">Ime:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-pošta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Komentar:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Pošlji</button>
+      </form>
+    </section>
+  </main>
+  <br>
+  <br>
+
+  <footer>
+    <p>&copy; Lili Račnik</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
